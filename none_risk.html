@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPQC | Public Marketing Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>.details-content { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; } .details-content.open { max-height: 500px; }</style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden border border-gray-200 relative">
+        
+        <!-- Back Button to Master Page -->
+        <a href="index.html" class="absolute top-4 left-4 text-gray-400 hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        </a>
+
+        <div class="bg-gray-900 text-white text-center py-6 px-4">
+            <h1 class="text-2xl font-bold tracking-wide">Global Swiss Finance Corp</h1>
+            <p class="text-sm text-gray-400 mt-1">Public Marketing Site</p>
+        </div>
+
+        <div class="p-6 text-center">
+            <!-- UPDATED AGILITY HEADER -->
+            <h2 class="text-gray-500 text-sm font-semibold uppercase tracking-wider mb-4">Crypto Agility Level: High</h2>
+            
+            <div class="bg-green-50 border-4 border-green-400 rounded-full h-48 w-48 mx-auto flex flex-col items-center justify-center shadow-inner">
+                <span class="text-green-600 font-bold text-xl">RISK: NONE</span>
+                <span class="text-gray-800 font-black text-3xl mt-2">0.5 hrs</span>
+                <span class="text-gray-500 text-xs mt-1">Swap Agility</span>
+            </div>
+
+            <div class="mt-6 relative inline-block group cursor-help">
+                <span class="inline-block bg-green-100 text-green-800 border-green-200 font-bold px-4 py-2 rounded-lg shadow-sm border">
+                    ✅ ACTIVE SAFE HARBOR
+                </span>
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-800 text-white text-xs rounded-lg py-3 px-4 shadow-xl pointer-events-none z-50">
+                    Full legal immunity granted under Art. 14b. The institution's agility meets or exceeds the required safety buffer for this risk profile.
+                    <svg class="absolute text-gray-800 h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-100">
+            <button onclick="document.getElementById('details').classList.toggle('open'); document.getElementById('arrow').classList.toggle('rotate-180');" class="w-full text-left px-6 py-4 flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                <span class="font-semibold text-gray-700">View Certificate Details</span>
+                <svg id="arrow" class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="details" class="details-content bg-gray-900 text-green-400 p-6 text-xs font-mono overflow-x-auto">
+<pre>{
+    "certificate_id": "VPQC-1777825028-NON",
+    "issuing_authority": "VMF Regulatory Engine v1.0",
+    "institution": "Global Swiss Finance Corp",
+    "asset_verified": "Public Marketing Site",
+    "metrics": {
+        "encryption_type": "AES-256",
+        "agility_level": "High",
+        "swap_agility_hrs": 0.5,
+        "compliance_status": "NONE"
+    },
+    "legal_standing": "ACTIVE SAFE HARBOR"
+}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
